@@ -99,6 +99,22 @@ code {
     white-space: pre-wrap;
 }
 
+#Contact_Developer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#Contact_Developer li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+#Contact_Developer i {
+    width: 20px;
+    text-align: center;
+}
+
 #Contact_Developer a {
     color: var(--emca-orange);
     text-decoration: none;
