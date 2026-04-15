@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Requirement 8 & 14: Nav on left, always visible */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100%;
+    border-right: 2px solid #333;
+    background: #f4f4f4;
+}
+
+#navbar header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+}
+
+#navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#navbar li {
+    border-top: 1px solid #ccc;
+}
+
+.nav-link {
+    display: block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Requirement 1: Main doc content */
+#main-doc {
+    margin-left: 300px;
+    padding: 20px;
+}
+
+.main-section header {
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #2c3e50;
+}
+
+code {
+    display: block;
+    background: #eee;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+/* Requirement 15: At least one media query */
+@media (max-width: 800px) {
+    #navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-right: none;
+        border-bottom: 2px solid #333;
+    }
+    #main-doc {
+        margin-left: 0;
+    }
+}
