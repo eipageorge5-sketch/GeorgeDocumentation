@@ -3,64 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uniqon Documentation - George Eipa</title>
+    <title>Uniqon System Documentation - George Eipa</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav id="navbar">
-        <header>Uniqon System Guide</header>
+        <header>Documentation</header>
         <ul>
             <li><a class="nav-link" href="#Introduction">Introduction</a></li>
             <li><a class="nav-link" href="#Sales_Management">Sales Management</a></li>
             <li><a class="nav-link" href="#Inventory_Control">Inventory Control</a></li>
             <li><a class="nav-link" href="#System_Architecture">System Architecture</a></li>
             <li><a class="nav-link" href="#Garage_Operations">Garage Operations</a></li>
+            <li><a class="nav-link" href="#Contact_Developer">Contact Developer</a></li>
         </ul>
     </nav>
 
     <main id="main-doc">
         <section class="main-section" id="Introduction">
             <header>Introduction</header>
-            <p>Welcome to the Uniqon system documentation for EMCA MOTORS, managed by George Eipa.</p>
-            <p>This technical guide outlines the core functionalities of our garage management software.</p>
-            <code>init.system_config("EMCA");</code>
+            <p>Welcome to the Uniqon system documentation for <strong>EMCA MOTORS</strong>, managed by George Eipa.</p>
+            <p>This technical guide outlines the core functionalities of our garage management software used to streamline daily operations.</p>
+            <code>init.system_config("EMCA_MOTORS_GARAGE");</code>
         </section>
 
         <section class="main-section" id="Sales_Management">
             <header>Sales Management</header>
-            <p>As Sales Manager, George oversees all transactions processed through the Uniqon terminal.</p>
-            <p>The system tracks revenue, tax calculations, and pending customer invoices automatically.</p>
-            <code>const totalSales = sales.calculate();</code>
+            <p>As Sales Manager, George oversees all transactions processed through the Uniqon terminal, ensuring accuracy in billing.</p>
+            <p>The system tracks revenue, tax calculations, and pending customer invoices automatically to maintain financial health.</p>
+            <code>const totalSales = sales.calculateMonthlyRevenue();</code>
             <ul>
-                <li>Daily Sales Reports</li>
-                <li>Invoice Generation</li>
+                <li>Daily Sales Reporting</li>
+                <li>Customer Invoicing</li>
+                <li>Digital Receipt Management</li>
             </ul>
         </section>
 
         <section class="main-section" id="Inventory_Control">
             <header>Inventory Control</header>
-            <p>The inventory module ensures that no vehicle service is delayed due to missing parts.</p>
-            <p>Real-time updates allow the garage to maintain optimal stock levels of filters and oil.</p>
-            <code>if (stock < 10) { restock(); }</code>
-            <ul>
-                <li>Part Number Tracking</li>
-                <li>Supplier Management</li>
-                <li>Auto-Reorder Triggers</li>
-            </ul>
+            <p>The inventory module ensures that no vehicle service is delayed due to missing spare parts or lubricants.</p>
+            <p>Real-time updates allow the garage to maintain optimal stock levels of filters, brake pads, and specialized oils.</p>
+            <code>if (part.stock < 10) { trigger.restock_alert(); }</code>
         </section>
 
         <section class="main-section" id="System_Architecture">
             <header>System Architecture</header>
-            <p>Uniqon is built on a scalable cloud infrastructure to prevent downtime during peak garage hours.</p>
-            <p>Data integrity is maintained through end-to-end encryption of all vehicle service records.</p>
-            <code>ssh admin@uniqon-emca-motors</code>
+            <p>Uniqon is built on a scalable infrastructure to prevent downtime during peak garage hours at EMCA MOTORS.</p>
+            <p>Data integrity is maintained through end-to-end encryption of all sensitive vehicle and customer service records.</p>
+            <code>ssh admin@uniqon-emca-motors.local</code>
+            <ul>
+                <li>Encrypted Data Backups</li>
+                <li>Multi-user Permission Levels</li>
+            </ul>
         </section>
 
         <section class="main-section" id="Garage_Operations">
             <header>Garage Operations</header>
-            <p>From the front office to the mechanic's bay, the system coordinates every task assigned.</p>
-            <p>George manages the flow of work orders to ensure EMCA MOTORS meets its delivery deadlines.</p>
-            <code>task.assign(mechanicID, "Brake Service");</code>
+            <p>From the front office to the mechanic's bay, the system coordinates every task assigned to the technical team.</p>
+            <p>George manages the flow of work orders to ensure the garage meets its delivery deadlines and customer expectations.</p>
+            <code>task.assign(mechanicID, "Full Engine Service");</code>
+        </section>
+
+        <section class="main-section" id="Contact_Developer">
+            <header>Contact Developer</header>
+            <p>This documentation was designed and is maintained by <strong>George Eipa</strong>.</p>
+            <p>Role: Sales Manager & System Administrator at EMCA MOTORS | Front-end Developer.</p>
+            <code>contact.reachOut("george-eipa-dev");</code>
+            <ul>
+                <li>Email: [Your Professional Email]</li>
+                <li>Location: EMCA MOTORS Garage</li>
+            </ul>
         </section>
     </main>
 </body>
