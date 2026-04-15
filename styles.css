@@ -99,6 +99,16 @@ code {
     white-space: pre-wrap;
 }
 
+#Contact_Developer a {
+    color: var(--emca-orange);
+    text-decoration: none;
+    font-weight: bold;
+}
+#Contact_Developer {
+    text-decoration: underline;
+    color: var(--emca-gray);
+}
+
 /* Requirement: Media Query for Responsiveness */
 @media (max-width: 768px) {
     #navbar {
